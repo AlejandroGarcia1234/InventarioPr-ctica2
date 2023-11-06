@@ -8,15 +8,17 @@ export const insertProducts = () => {
         event.preventDefault()
 
         const productName = document.getElementById("product-name").value;
+        const productAuthor = document.getElementById("product-author").value;
         const productQuantity = parseInt(document.getElementById("product-qty").value);
         const productPrice = parseFloat(document.getElementById("product-price").value);
 
-        if (productName && !isNaN(productQuantity) && !isNaN(productPrice)){
+        if (productName && productAuthor && !isNaN(productQuantity) && !isNaN(productPrice)){
 
             //Creamos un nuevo objeto producto
             const newProduct = {
                 id: inventory.length +1,
                 nombre: productName,
+                autor: productAuthor,
                 cantidad: productQuantity,
                 precio: productPrice
         }
