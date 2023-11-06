@@ -22,13 +22,12 @@ export const listProductos = () => {
 
     deleteButton.innerText = "DELETE";
     deleteButton.addEventListener("click", () => {
-      //Añadir lógica de confirmación de "¿Seguro borrar?". Se accede con item.nombre, item.cantidad e item.precio
    
       if(confirm(`¿Estás seguro de que quieres borrar "${item.nombre}"?`)){
-        //Encuentra el índice del producto a eliminar.
+        //Encuentramos el índice del producto que queramos eliminar
         const index = inventory.findIndex(product => product.id === item.id)
 
-        if(index !== -1){ //Si el indice resultando no es -1, tenemos coincidencia
+        if(index !== -1){ 
           inventory.splice(index, 1)
         } 
 
@@ -43,7 +42,7 @@ export const listProductos = () => {
     const editButton = document.createElement("button");
     editButton.innerText = "EDITAR";
     editButton.addEventListener("click", () => {
-      //Añadir lógica editar producto. Se accede con item.nombre, item.cantidad e item.precio
+
     });
 
     cell4.appendChild(editButton);

@@ -6,7 +6,7 @@ import { insertProducts } from "./insertProducts.js";
  *  GitHub:
  */
 
-//List of products
+//Product List
 
 document.addEventListener("DOMContentLoaded", listProductos);
 

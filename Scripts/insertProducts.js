@@ -4,17 +4,16 @@ import { listProductos } from "./listproductos.js";
 export const insertProducts = () => {
     const productForm = document.getElementById("inventory-tab-form")
     productForm.addEventListener("submit", function(event){
-        // Le quitamos las propiedades a la etiqueta form
+        // Se quitan propiedades a la etiqueta from
         event.preventDefault()
 
-        //Capturar los valores introducidos por el usuario
         const productName = document.getElementById("product-name").value;
         const productQuantity = parseInt(document.getElementById("product-qty").value);
         const productPrice = parseFloat(document.getElementById("product-price").value);
 
         if (productName && !isNaN(productQuantity) && !isNaN(productPrice)){
 
-            //Crear un nuevo objeto producto
+            //Creamos un nuevo objeto producto
             const newProduct = {
                 id: inventory.length +1,
                 nombre: productName,
@@ -22,15 +21,15 @@ export const insertProducts = () => {
                 precio: productPrice
         }
 
-            //Agregar el nuevo producto al inventario
+            //Agregamos el nuevo producto a nuestro inventario
             inventory.push(newProduct)
 
             const cleanTable = document.getElementById("clean-table")
 
-            //Limpiar la tabla antes de una nueva insercion
+            //De esta manera limpiamos la tabla antes de realizar una nueva inserción
             cleanTable.innerHTML = ""
 
-            //Limpiar los cambios del formulario
+            //Limpiamos cualquier cambio en el formulario
             productForm.reset();
 
             listProductos();
