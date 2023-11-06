@@ -1,6 +1,6 @@
 import { inventory } from "./products.js";
 import { deleteProducts } from "./deleteProducts.js";
-import { updateProducts } from "./updateProducts.js";
+
 
 export const listProductos = () => {
   const table = document.getElementById("inventory-table");
