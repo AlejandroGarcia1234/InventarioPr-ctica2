@@ -3,7 +3,7 @@ import { insertProducts } from "./insertProducts.js";
 
 /**
  *  Autor: Alejandro García Álvarez
- *  GitHub:
+ *  GitHub: https://github.com/AlejandroGarcia1234/InventarioPr-ctica2
  */
 
 //Product List
