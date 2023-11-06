@@ -4,7 +4,7 @@ import { listProductos } from "./listproductos.js";
 export const insertProducts = () => {
     const productForm = document.getElementById("inventory-tab-form")
     productForm.addEventListener("submit", function(event){
-        // Se quitan propiedades a la etiqueta from
+        // Se quitan propiedades a la etiqueta form
         event.preventDefault()
 
         const productName = document.getElementById("product-name").value;
