@@ -1,5 +1,6 @@
 import { inventory } from "./products.js";
 import { deleteProducts } from "./deleteProducts.js";
+import { updateProducts } from "./updateProducts.js";
 
 export const listProductos = () => {
   const table = document.getElementById("inventory-table");
@@ -34,6 +35,8 @@ export const listProductos = () => {
     const editButton = document.createElement("button");
     editButton.innerText = "EDITAR";
     editButton.addEventListener("click", () => {
+
+      updateProducts(item)
 
     });
 
