@@ -1,4 +1,5 @@
 import { inventory } from "./products.js";
+import { deleteProducts } from "./deleteProducts.js";
 
 export const listProductos = () => {
   const table = document.getElementById("inventory-table");
@@ -22,22 +23,10 @@ export const listProductos = () => {
     cell4.innerHTML = item.precio;
 
     const deleteButton = document.createElement("button");
-
     deleteButton.innerText = "BORRAR";
     deleteButton.addEventListener("click", () => {
-   
-      if(confirm(`¿Estás seguro de que quieres borrar "${item.nombre}"?`)){
-        //Encontramos el índice del producto que queramos eliminar
-        const index = inventory.findIndex(product => product.id === item.id)
-
-        if(index !== -1){ 
-          inventory.splice(index, 1)
-        } 
-
-      }
-
-      cleanTable.innerHTML = ""
-      listProductos()
+      
+      deleteProducts(item)
     });
 
     cell5.appendChild(deleteButton);

@@ -5,10 +5,6 @@ const getRandomQuantity = () => {
   return Math.floor(Math.random() * 30) + 1;
 };
 
-function getRandomQuantityTraditional(params) {
-    
-}
-
 const inventory = [
     { id: 1, nombre: "One Piece", autor: "Eiichiro Oda", cantidad: getRandomQuantity(), precio: 7.95 },
     { id: 2, nombre: "Berserk", autor: "Kentaro Miura", cantidad: getRandomQuantity(), precio: 9.95 },
