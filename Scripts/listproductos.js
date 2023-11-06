@@ -24,7 +24,7 @@ export const listProductos = () => {
     deleteButton.addEventListener("click", () => {
    
       if(confirm(`¿Estás seguro de que quieres borrar "${item.nombre}"?`)){
-        //Encuentramos el índice del producto que queramos eliminar
+        //Encontramos el índice del producto que queramos eliminar
         const index = inventory.findIndex(product => product.id === item.id)
 
         if(index !== -1){ 
