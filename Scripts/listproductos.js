@@ -20,7 +20,7 @@ export const listProductos = () => {
 
     const deleteButton = document.createElement("button");
 
-    deleteButton.innerText = "DELETE";
+    deleteButton.innerText = "BORRAR";
     deleteButton.addEventListener("click", () => {
    
       if(confirm(`¿Estás seguro de que quieres borrar "${item.nombre}"?`)){
