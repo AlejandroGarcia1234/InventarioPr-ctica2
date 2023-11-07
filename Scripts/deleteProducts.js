@@ -1,5 +1,6 @@
 import { inventory } from "./products.js";
-import { listProductos } from "./listproductos.js"; 
+import { listProductos } from "./listproductos.js";
+import { totalInv } from "./totalInventory.js";
 
 export const deleteProducts = (item) => {
 
@@ -14,6 +15,7 @@ export const deleteProducts = (item) => {
 const cleanTable = document.getElementById("clean-table");
 cleanTable.innerHTML = ""
 listProductos()
+totalInv(); //Añadiendo esta función aquí conseguimos que al borrar un producto se actualize el valor total del inventario
 
 }
   

@@ -1,5 +1,6 @@
 import { inventory } from "./products.js";
 import { listProductos } from "./listproductos.js";
+import { totalInv } from "./totalInventory.js";
 
 export const insertProducts = () => {
     const productForm = document.getElementById("inventory-tab-form")
@@ -35,6 +36,7 @@ export const insertProducts = () => {
             productForm.reset();
 
             listProductos();
+            totalInv(); //Añadiendo esta función aquí conseguimos que al añadir un producto se actualize el valor total del inventario
 
         }
 })
