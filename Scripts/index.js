@@ -1,5 +1,6 @@
 import { listProductos } from "./listproductos.js";
 import { insertProducts } from "./insertProducts.js";
+import { totalInv } from "./totalInventory.js"
 
 /**
  *  Autor: Alejandro García Álvarez
@@ -18,4 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 })
 
+//Valor total del inventario
 
+document.addEventListener("DOMContentLoaded", totalInv);
