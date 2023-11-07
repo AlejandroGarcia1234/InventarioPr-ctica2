@@ -6,7 +6,7 @@ import { inventory } from "./productos.js";
 import { totalInv } from "./totalInventory.js";
 
 
-const editProduct = (item) => {
+const updateProducts = (item) => {
   const newName = prompt("Ingrese el nuevo nombre:", item.nombre);
   
   if (newName === null || newName.trim() === "") {
