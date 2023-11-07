@@ -1,13 +1,13 @@
+/**
+ *  Autor: Alejandro García Álvarez
+ *  GitHub: https://github.com/AlejandroGarcia1234/InventarioPr-ctica2
+ */
+
 import { listProductos } from "./listproductos.js";
 import { insertProducts } from "./insertProducts.js";
 import { totalInv } from "./totalInventory.js"
 import { searchProducts } from "./searchProducts.js";
 
-
-/**
- *  Autor: Alejandro García Álvarez
- *  GitHub: https://github.com/AlejandroGarcia1234/InventarioPr-ctica2
- */
 
 //Product List
 
@@ -33,3 +33,4 @@ searchBtn.addEventListener("click", () => {
     const searchProduct = searchInput.value;
     searchProducts(searchProduct);
 });
+

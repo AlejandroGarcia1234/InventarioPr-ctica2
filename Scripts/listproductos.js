@@ -35,6 +35,7 @@ export const listProductos = () => {
 
     const editButton = document.createElement("button");
     editButton.innerText = "EDITAR";
+    editButton.className = "edit-button"
     editButton.addEventListener("click", () => {
 
       updateProducts(item)
