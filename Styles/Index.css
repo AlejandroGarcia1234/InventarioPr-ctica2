@@ -15,6 +15,12 @@ h1{
     color: black;
 }
 
+h2{
+    text-align: center;
+    font-family: 'Griffy';
+    color: black; 
+}
+
 .inventory-table-style{
     border-collapse: collapse;
     width: 80%;
@@ -24,8 +30,8 @@ h1{
 
 .inventory-table-style th,
 .inventory-table-style td {
-    border: 1px solid #cccc;
-    padding: 8px;
+    border: 2px solid #333;
+    padding: 10px;
     text-align: center;
 }
 
@@ -42,9 +48,9 @@ h1{
     background-color: rgb(66, 100, 163);
     color: white;
     padding: 20px;
-    border: 1px solid #333;
-    border-radius: 5px;
-    margin: 20px;
+    border: 2px solid #333;
+    border-radius: 40px;
+    margin: 50px;
     box-shadow: 0 2px 4 px rgba(0, 0, 0, 1);
 }
 
@@ -78,4 +84,12 @@ button{
 
 button:hover{
     background-color: rgb(24, 141, 57);
+}
+
+.delete-button{
+    background-color: rgb(233, 14, 14);
+}
+
+.delete-button:hover{
+    background-color: rgb(233, 14, 14);
 }

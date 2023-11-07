@@ -25,6 +25,7 @@ export const listProductos = () => {
 
     const deleteButton = document.createElement("button");
     deleteButton.innerText = "BORRAR";
+    deleteButton.className = "delete-button"
     deleteButton.addEventListener("click", () => {
       
       deleteProducts(item)
